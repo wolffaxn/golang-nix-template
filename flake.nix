@@ -1,5 +1,5 @@
 {
-  description = "golang-nix-sample";
+  description = "golang-nix-template";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
