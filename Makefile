@@ -1,7 +1,7 @@
 .PHONY: default
 default: build
 
-DOCKER_IMAGE ?= golang-nix-template
+DOCKER_IMAGE ?= $(strip $(notdir $(shell git rev-parse --show-toplevel)))
 
 # get build date
 BUILD_DATE = $(strip $(shell date -u +'%Y-%m-%dT%H:%M:%SZ'))
