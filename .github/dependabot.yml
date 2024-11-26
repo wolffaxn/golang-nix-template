@@ -9,5 +9,9 @@ updates:
     # check for updates every weekday
     schedule:
       interval: "daily"
-    assignees:
-      - "wolffaxn"
+      time: "06:00"
+    commit-message:
+      include: "scope"
+      prefix: "chore"
+    labels:
+      - "dependencies"
